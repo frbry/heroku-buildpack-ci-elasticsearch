@@ -58,7 +58,7 @@ source $BUILD_DIR/.profile.d/jvmcommon.sh
 
 if [ ! -f /tmp/es.pid ]; then
   echo "Starting ElasticSearch..."
-  elasticsearch -d -p /tmp/es.pid > /dev/null
+  elasticsearch -d -q -p /tmp/es.pid > /dev/null
 fi
 EOF
 
