@@ -35,6 +35,9 @@ mkdir -p $CACHE_DIR
 
 echo "Search in cache directory $CACHE_DIR/elasticsearch-$VERSION" | indent
 
+cd $CACHE_DIR
+rm elasticsearch-7.12.1
+
 if [ ! -d $CACHE_DIR/elasticsearch-$VERSION ]; then
 	echo "Fetching and installing elasticsearch" | indent
 	cd $CACHE_DIR
