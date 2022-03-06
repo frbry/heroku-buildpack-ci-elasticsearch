@@ -39,11 +39,8 @@ echo "Fetching and installing elasticsearch" | indent
 cd $CACHE_DIR
 curl -sOL "https://artifacts.elastic.co/downloads/elasticsearch/$ELASTICSEARCH_DOWNLOAD_FILENAME"
 tar zxf $ELASTICSEARCH_DOWNLOAD_FILENAME
-ls -la
 cd $ELASTICSEARCH_EXTRACTED_FOLDER_NAME
 cp -r $CACHE_DIR/elasticsearch-$VERSION/* $INSTALL_DIR/
-echo "-----------"
-ls -la
 
 #if [ ! -d $CACHE_DIR/elasticsearch-$VERSION ]; then
 #else
